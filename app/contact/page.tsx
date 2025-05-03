@@ -119,7 +119,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-800 dark:text-white">Phone</h3>
-                    <p className="text-slate-600 dark:text-slate-300">+1 (203) 888-4200</p>
+                    <p className="text-slate-600 dark:text-slate-300">+1 (929) 536-4063</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Monday-Friday, 8am-6pm</p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-800 dark:text-white">Email</h3>
-                    <p className="text-slate-600 dark:text-slate-300">info@stonecraftpaving.com</p>
+                    <p className="text-slate-600 dark:text-slate-300">malciconstruction@gmail.com</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
@@ -140,9 +140,7 @@ export default function ContactPage() {
                     <MapPin className="text-blue-600 dark:text-blue-400" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-800 dark:text-white">Office Location</h3>
-                    <p className="text-slate-600 dark:text-slate-300">123 Main Street</p>
-                    <p className="text-slate-600 dark:text-slate-300">Fairfield, CT 06824</p>
+                    <p className="text-slate-600 dark:text-slate-300">Danbury, CT 06824</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">By appointment only</p>
                   </div>
                 </div>
@@ -363,36 +361,72 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-4">Service Areas</h2>
           <p className="text-center text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-12">
-            We provide paving and masonry services throughout Connecticut, with a focus on the following areas:
+            We provide construction and excavation services throughout Connecticut and New York, with a focus on the
+            following areas:
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              "Fairfield",
-              "Greenwich",
-              "Westport",
-              "Darien",
-              "New Canaan",
-              "Stamford",
-              "Norwalk",
-              "Wilton",
-              "Ridgefield",
-              "Weston",
-              "Easton",
-              "Trumbull",
-              "Stratford",
-              "Milford",
-              "Orange",
-              "Woodbridge",
-            ].map((area, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-slate-800 rounded-lg p-4 text-center shadow-sm border border-slate-100 dark:border-slate-700 animate-fade-in-up"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <p className="text-slate-700 dark:text-slate-200">{area}</p>
-              </div>
-            ))}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-center text-slate-700 dark:text-slate-300 mb-4">Connecticut</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                "Danbury",
+                "Fairfield",
+                "Greenwich",
+                "Westport",
+                "Darien",
+                "New Canaan",
+                "Stamford",
+                "Norwalk",
+                "Wilton",
+                "Ridgefield",
+                "Weston",
+                "Easton",
+                "Trumbull",
+                "Stratford",
+                "Milford",
+                "Woodbridge",
+              ].map((area, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-lg p-4 text-center shadow-sm border border-slate-100 dark:border-slate-700 animate-fade-in-up"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <p className="text-slate-700 dark:text-slate-200">{area}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-center text-slate-700 dark:text-slate-300 mb-4">New York</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                "White Plains",
+                "Yonkers",
+                "New Rochelle",
+                "Mount Vernon",
+                "Scarsdale",
+                "Rye",
+                "Harrison",
+                "Mamaroneck",
+                "Port Chester",
+                "Peekskill",
+                "Ossining",
+                "Tarrytown",
+                "Bronxville",
+                "Larchmont",
+                "Dobbs Ferry",
+                "Hastings-on-Hudson",
+              ].map((area, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 rounded-lg p-4 text-center shadow-sm border border-slate-100 dark:border-slate-700 animate-fade-in-up"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
+                  <p className="text-slate-700 dark:text-slate-200">{area}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
