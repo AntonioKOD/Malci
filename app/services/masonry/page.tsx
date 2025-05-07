@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import PageHeader from "@/components/page-header"
 import masonry from '@/public/masonry.jpeg'
+import MetaHead from "@/components/meta-head"
 
 export default function MasonryPage() {
   const [activeTab, setActiveTab] = useState("walkways")
@@ -167,6 +168,12 @@ export default function MasonryPage() {
   const activeService = services.find((service) => service.id === activeTab) || services[0]
 
   return (
+    <>
+    <MetaHead
+        title="Masonry Services"
+        description="Expert masonry services from Malci Construction including brick, stone, and block work for residential and commercial projects in CT and NY."
+        ogUrl="https://malciconstruction.com/services/masonry"
+      />
     <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <PageHeader
         title="Masonry Services"
@@ -397,5 +404,6 @@ export default function MasonryPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

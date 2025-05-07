@@ -8,6 +8,7 @@ import PageHeader from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { useInView } from "react-intersection-observer"
 import CostCalculator from "@/components/cost-calculator"
+import MetaHead from "@/components/meta-head"
 
 
 interface EmailTemplateProps {
@@ -125,6 +126,12 @@ export default function ContactPage() {
   }
 
   return (
+    <>
+    <MetaHead
+    title="Contact Us"
+    description="Get in touch with Malci Construction for quotes, questions, or to schedule a consultation for your construction project."
+    ogUrl="https://malciconstruction.com/contact"
+  />
     <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <PageHeader
         title="Contact Us"
@@ -462,5 +469,6 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

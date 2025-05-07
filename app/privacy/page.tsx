@@ -1,7 +1,14 @@
 import PageHeader from "@/components/page-header"
+import MetaHead from "@/components/meta-head"
 
 export default function PrivacyPage() {
   return (
+    <>
+       <MetaHead
+        title="Privacy Policy"
+        description="Malci Construction's privacy policy outlining how we collect, use, and protect your personal information."
+        ogUrl="https://malciconstruction.com/privacy"
+      />
     <main className="min-h-screen bg-slate-50">
       <PageHeader
         title="Privacy Policy"
@@ -129,5 +136,6 @@ export default function PrivacyPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

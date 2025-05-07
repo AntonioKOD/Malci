@@ -8,6 +8,7 @@ import TestimonialCard from "@/components/testimonial-card"
 import TestimonialSlider from "@/components/testimonial-slider"
 import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
+import MetaHead from "@/components/meta-head"
 
 // Define review sources and testimonials
 const sources = ["All", "Google", "Facebook", "Houzz", "Yelp", "HomeAdvisor"]
@@ -143,6 +144,12 @@ export default function ReviewsPage() {
   const featuredTestimonials = testimonials.filter((_, index) => index < 5)
 
   return (
+    <>
+      <MetaHead
+        title="Customer Reviews"
+        description="Read what our satisfied customers have to say about our paving and masonry services."
+        ogUrl="https://malciconstruction.com/reviews"
+      />
     <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <PageHeader
         title="Customer Reviews"
@@ -268,5 +275,6 @@ export default function ReviewsPage() {
         description="Contact us today to discuss your project and join our list of satisfied customers."
       />
     </main>
+    </>
   )
 }

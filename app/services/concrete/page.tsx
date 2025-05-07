@@ -11,6 +11,7 @@ import concreteFoundation from '@/public/concrete_foundation.png'
 import concreteSidewalk from '@/public/concrete_sidewalk.png'
 import concreteDriveway from '@/public/concrete_driveway.png'
 import concreteWork from '@/public/concrete_work.jpeg'
+import MetaHead from "@/components/meta-head"
 
 export default function ConcreteServicesPage() {
   const [activeTab, setActiveTab] = useState("slabs")
@@ -153,6 +154,12 @@ export default function ConcreteServicesPage() {
   const activeService = services.find((service) => service.id === activeTab) || services[0]
 
   return (
+    <>
+    <MetaHead
+        title="Concrete Services"
+        description="Professional concrete services from Malci Construction including foundations, driveways, patios, and decorative concrete work in CT and NY."
+        ogUrl="https://malciconstruction.com/services/concrete"
+      />
     <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <PageHeader
         title="Concrete Services"
@@ -367,5 +374,6 @@ export default function ConcreteServicesPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

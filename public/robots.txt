@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://malciconstruction.com
+
+# Sitemaps
+Sitemap: https://malciconstruction.com/sitemap.xml

@@ -6,6 +6,7 @@ import { ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import PageHeader from "@/components/page-header"
 import { useInView } from "react-intersection-observer"
+import MetaHead from "@/components/meta-head"
 
 export default function ServicesPage() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
@@ -114,6 +115,12 @@ export default function ServicesPage() {
   ]
 
   return (
+    <>
+    <MetaHead
+        title="Our Services"
+        description="Comprehensive construction services including concrete work, excavation, masonry, and paving across Connecticut and New York."
+        ogUrl="https://malciconstruction.com/services"
+      />
     <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <PageHeader
         title="Our Services"
@@ -291,5 +298,6 @@ export default function ServicesPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

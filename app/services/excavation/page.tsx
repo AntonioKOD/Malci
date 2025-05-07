@@ -5,6 +5,7 @@ import { CheckCircle } from "lucide-react"
 import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import PageHeader from "@/components/page-header"
+import MetaHead from "@/components/meta-head"
 
 export default function ExcavationPage() {
   const [activeTab, setActiveTab] = useState("site-preparation")
@@ -195,6 +196,12 @@ export default function ExcavationPage() {
   const activeService = services.find((service) => service.id === activeTab) || services[0]
 
   return (
+    <>
+    <MetaHead
+        title="Excavation Services"
+        description="Professional excavation services from Malci Construction for residential and commercial projects, including site preparation and grading in CT and NY."
+        ogUrl="https://malciconstruction.com/services/excavation"
+      />
     <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <PageHeader
         title="Excavation Services"
@@ -476,5 +483,6 @@ export default function ExcavationPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

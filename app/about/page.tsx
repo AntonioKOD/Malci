@@ -3,23 +3,18 @@ import { CheckCircle } from "lucide-react"
 import PageHeader from "@/components/page-header"
 import ContactCTA from "@/components/contact-cta"
 import working from "@/public/working.jpeg"
-import type { Metadata } from "next"
+import MetaHead from "@/components/meta-head"
 
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Learn about Malci Construction's history, values, and commitment to quality construction services in Connecticut and New York.",
-  openGraph: {
-    title: "About Us | Malci Construction",
-    description:
-      "Learn about Malci Construction's history, values, and commitment to quality construction services in Connecticut and New York.",
-    url: "https://malciconstruction.com/about",
-  },
-}
 
 export default function AboutPage() {
   return (
+    <>
+    <MetaHead
+        title="About Us"
+        description="Learn about Malci Construction's history, values, and commitment to quality construction services in Connecticut and New York."
+        ogUrl="https://malciconstruction.com/about"
+      />
     <main className="min-h-screen bg-slate-50">
       <PageHeader
         title="About Stonecraft"
@@ -188,5 +183,6 @@ export default function AboutPage() {
 
       <ContactCTA />
     </main>
+    </>
   )
 }
