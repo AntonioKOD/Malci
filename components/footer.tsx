@@ -120,7 +120,7 @@ export default function Footer() {
 
         <div className="border-t border-slate-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} Malci Construction. All rights reserved.
+            © {new Date().getFullYear()} Malci Construction. All rights reserved. | Designed by{" "} <Link href='https://codewithtoni.com' className="font-bold underline">CodeWithToni</Link>
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-sm text-slate-400 hover:text-white transition-colors">

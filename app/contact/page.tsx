@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { useInView } from "react-intersection-observer"
 import CostCalculator from "@/components/cost-calculator"
 
+
 interface EmailTemplateProps {
   name: string
   email: string

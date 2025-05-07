@@ -170,11 +170,11 @@ export default function UnifiedNavbar() {
                     </summary>
                     <div className="pl-4 mt-2 flex flex-col space-y-2">
                       <Link
-                        href="/services/paving"
+                        href="/services/concrete"
                         className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 py-1"
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        Paving
+                        Concrete
                       </Link>
                       <Link
                         href="/services/masonry"
@@ -184,25 +184,11 @@ export default function UnifiedNavbar() {
                         Masonry
                       </Link>
                       <Link
-                        href="/services/driveways"
+                        href="/services/excavation"
                         className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 py-1"
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        Driveways
-                      </Link>
-                      <Link
-                        href="/services/walkways"
-                        className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 py-1"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        Walkways
-                      </Link>
-                      <Link
-                        href="/services/commercial"
-                        className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 py-1"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        Commercial
+                        Excavation
                       </Link>
                     </div>
                   </details>
