@@ -123,7 +123,7 @@ export default function UnifiedNavbar() {
             >
               CONTACT
             </Link>
-            <Button className="nav-item bg-amber-500 hover:bg-amber-600 text-white">Free Estimate</Button>
+            <Link href={'/contact'}><Button className="nav-item bg-amber-500 hover:bg-amber-600 text-white">Free Estimate</Button></Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -207,12 +207,14 @@ export default function UnifiedNavbar() {
                 >
                   CONTACT
                 </Link>
+                <Link href="/contact">
                 <Button
                   className="mobile-nav-item bg-amber-500 hover:bg-amber-600 text-white w-full justify-center mt-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Free Estimate
                 </Button>
+                </Link>
               </div>
             </motion.div>
           )}
