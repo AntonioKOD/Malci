@@ -2,6 +2,7 @@ import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 import PageHeader from "@/components/page-header"
 import ContactCTA from "@/components/contact-cta"
+import working from "@/public/working.jpeg"
 
 export default function AboutPage() {
   return (
@@ -33,7 +34,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg animate-fade-in-up delay-100">
               <Image
-                src="/placeholder.svg?key=about-story"
+                src={working}
                 alt="Stonecraft team working on a project"
                 fill
                 className="object-cover"

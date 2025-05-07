@@ -21,7 +21,7 @@ export default function ExcavationPage() {
         "Access road creation",
         "Erosion control implementation",
       ],
-      imageKey: "site-preparation",
+      imageKey: "https://images.unsplash.com/photo-1630288214117-5ebf6c9de343?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       applications: ["New Construction", "Additions", "Landscaping Projects", "Infrastructure Development"],
       equipment: ["Bulldozers", "Excavators", "Skid Steers", "Dump Trucks"],
     },
@@ -36,7 +36,7 @@ export default function ExcavationPage() {
         "Compaction to specifications",
         "Laser-guided precision",
       ],
-      imageKey: "grading",
+      imageKey: "https://images.unsplash.com/photo-1669170936278-010c9c8eb680?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXhjYXZhdGlvbiUyMGdyYWRpbmd8ZW58MHx8MHx8fDA%3D",
       applications: ["Building Pads", "Driveways", "Yards and Landscapes", "Athletic Fields"],
       equipment: ["Motor Graders", "Bulldozers", "Compactors", "Laser Levels"],
     },
@@ -46,7 +46,7 @@ export default function ExcavationPage() {
       description:
         "Expert ground leveling to create flat, stable surfaces for construction, hardscaping, and landscape features.",
       features: ["Precision elevation control", "Subgrade preparation", "Surface stabilization", "Compaction testing"],
-      imageKey: "leveling",
+      imageKey: "https://images.unsplash.com/photo-1715681025091-335a3913b262?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGV4Y2F2YXRpb24lMjBsZXZlbGluZ3xlbnwwfHwwfHx8MA%3D%3D",
       applications: ["Building Foundations", "Concrete Slabs", "Patios and Walkways", "Pool Installations"],
       equipment: ["Laser Levels", "Plate Compactors", "Vibratory Rollers", "Skid Steers"],
     },
@@ -61,7 +61,7 @@ export default function ExcavationPage() {
         "Shoring for safety compliance",
         "Backfilling and compaction",
       ],
-      imageKey: "trenching",
+      imageKey: "https://images.unsplash.com/photo-1742544689243-a0ed5454bddc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGV4Y2F2YXRpb24lMjB0cmVuY2hpbmd8ZW58MHx8MHx8fDA%3D",
       applications: ["Utility Lines", "Drainage Systems", "Irrigation", "Foundation Footings"],
       equipment: ["Trenchers", "Mini Excavators", "Backhoes", "Compactors"],
     },
@@ -76,7 +76,7 @@ export default function ExcavationPage() {
         "Concrete removal",
         "Debris sorting and recycling",
       ],
-      imageKey: "demolition",
+      imageKey: "https://images.unsplash.com/photo-1695047672086-8e89b95aa06f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXhjYXZhdGlvbiUyMGRlbW9saXRpb258ZW58MHx8MHx8fDA%3D",
       applications: ["Building Removal", "Driveway Replacement", "Interior Renovations", "Site Clearing"],
       equipment: ["Excavators with Attachments", "Skid Steers", "Breakers", "Crushing Equipment"],
     },
@@ -133,40 +133,34 @@ export default function ExcavationPage() {
       description:
         "Versatile digging machines with various bucket sizes for trenching, grading, and material handling.",
       bestFor: "Trenching, foundations, site clearing",
-      imageKey: "excavator",
+      imageKey: "https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXhjYXZhdG9yfGVufDB8fDB8fHww",
     },
     {
       name: "Bulldozers",
       description:
         "Powerful tracked vehicles with front blades for pushing large quantities of soil, debris, and materials.",
       bestFor: "Clearing, grading, material spreading",
-      imageKey: "bulldozer",
+      imageKey: "https://images.unsplash.com/photo-1630288214032-2c4cc2c080ca?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVsbGRvemVyfGVufDB8fDB8fHww",
     },
     {
       name: "Backhoes",
       description:
         "Combination machines with a loader bucket on the front and a digging arm on the back for versatile operations.",
       bestFor: "Utility work, small excavations, loading",
-      imageKey: "backhoe",
+      imageKey: "https://images.unsplash.com/photo-1669867996628-4e31d96bc98f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tob2V8ZW58MHx8MHx8fDA%3D",
     },
     {
       name: "Skid Steers",
       description: "Compact, maneuverable machines with interchangeable attachments for various tasks in tight spaces.",
       bestFor: "Confined areas, finish grading, material handling",
-      imageKey: "skid-steer",
+      imageKey: "https://images.unsplash.com/photo-1683372101272-6a144c795e2a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2tpZCUyMHN0ZWVyfGVufDB8fDB8fHww",
     },
     {
       name: "Dump Trucks",
       description:
         "Heavy-duty vehicles for transporting excavated materials, debris, and aggregate to and from the site.",
       bestFor: "Material transport, debris removal",
-      imageKey: "dump-truck",
-    },
-    {
-      name: "Compaction Equipment",
-      description: "Specialized machines that compress soil and aggregate to achieve proper density for construction.",
-      bestFor: "Soil stabilization, base preparation",
-      imageKey: "compaction-equipment",
+      imageKey: "https://images.unsplash.com/photo-1671022406737-c51dfa332edf?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGR1bXAlMjB0cnVja3xlbnwwfHwwfHx8MA%3D%3D",
     },
   ]
 
@@ -248,7 +242,7 @@ export default function ExcavationPage() {
             <div>
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?key=excavation-overview"
+                  src="https://images.unsplash.com/photo-1494778924281-cce023ab1acb?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXhjYXZhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
                   alt="Professional excavation equipment"
                   width={600}
                   height={400}
@@ -288,7 +282,7 @@ export default function ExcavationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src={`/generic-placeholder-graphic.png?key=${activeService.imageKey}`}
+                src={activeService.imageKey}
                 alt={activeService.title}
                 width={600}
                 height={400}
@@ -352,13 +346,7 @@ export default function ExcavationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {processSteps.map((step, idx) => (
               <div key={idx} className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md">
-                <div className="relative h-40">
-                  <Image
-                    src={`/generic-placeholder-graphic.png?key=${step.imageKey}`}
-                    alt={step.title}
-                    fill
-                    className="object-cover"
-                  />
+                <div className="relative h-10">
                   <div className="absolute top-3 left-3 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
                     {step.step}
                   </div>
@@ -388,7 +376,7 @@ export default function ExcavationPage() {
               <div key={idx} className="bg-slate-50 dark:bg-slate-700 rounded-lg overflow-hidden shadow-md">
                 <div className="h-40 bg-slate-200 dark:bg-slate-600">
                   <Image
-                    src={`/generic-placeholder-graphic.png?key=${item.imageKey}`}
+                    src={item.imageKey}
                     alt={item.name}
                     width={400}
                     height={200}

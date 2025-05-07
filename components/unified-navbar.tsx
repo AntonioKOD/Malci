@@ -43,14 +43,14 @@ export default function UnifiedNavbar() {
         }`}
       >
         <a
-          href="tel:+12038884200"
+          href="tel:+19295364063"
           className="flex items-center space-x-2 text-sm hover:text-blue-200 transition-colors"
         >
           <Phone size={16} />
           <span>+1 (929) 536-4063</span>
         </a>
         <a
-          href="mailto:info@stonecraftpaving.com"
+          href="mailto:malciconstruction@gmail.com"
           className="flex items-center space-x-2 text-sm hover:text-blue-200 transition-colors"
         >
           <Mail size={16} />
@@ -111,12 +111,6 @@ export default function UnifiedNavbar() {
                 </Link>
               </div>
             </div>
-            <Link
-              href="/gallery"
-              className="nav-item text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
-            >
-              GALLERY
-            </Link>
             <Link
               href="/reviews"
               className="nav-item text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
@@ -213,13 +207,6 @@ export default function UnifiedNavbar() {
                     </div>
                   </details>
                 </div>
-                <Link
-                  href="/gallery"
-                  className="mobile-nav-item text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  GALLERY
-                </Link>
                 <Link
                   href="/reviews"
                   className="mobile-nav-item text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors py-2"

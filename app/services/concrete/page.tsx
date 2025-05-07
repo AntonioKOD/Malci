@@ -5,6 +5,11 @@ import { CheckCircle } from "lucide-react"
 import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import PageHeader from "@/components/page-header"
+import concreteSlab from '@/public/concrete_slab.png'
+import concreteWall from '@/public/concrete_wall.png'
+import concreteFoundation from '@/public/concrete_foundation.png'
+import concreteSidewalk from '@/public/concrete_sidewalk.png'
+import concreteDriveway from '@/public/concrete_driveway.png'
 
 export default function ConcreteServicesPage() {
   const [activeTab, setActiveTab] = useState("slabs")
@@ -21,7 +26,7 @@ export default function ConcreteServicesPage() {
         "Customizable edge profiles",
         "Engineered drainage slopes",
       ],
-      imageKey: "concrete-slabs",
+      imageKey: concreteSlab,
     },
     {
       id: "walls",
@@ -34,7 +39,7 @@ export default function ConcreteServicesPage() {
         "Textured or smooth finishes available",
         "Designed to withstand soil pressure",
       ],
-      imageKey: "concrete-walls",
+      imageKey: concreteWall,
     },
     {
       id: "foundations",
@@ -47,7 +52,7 @@ export default function ConcreteServicesPage() {
         "Moisture barrier installation",
         "Precision excavation & grading",
       ],
-      imageKey: "concrete-foundations",
+      imageKey: concreteFoundation,
     },
     {
       id: "sidewalks",
@@ -60,7 +65,7 @@ export default function ConcreteServicesPage() {
         "Detectable warning strips available",
         "Seamless transitions to driveways",
       ],
-      imageKey: "concrete-sidewalks",
+      imageKey: concreteSidewalk,
     },
     {
       id: "driveways",
@@ -73,7 +78,7 @@ export default function ConcreteServicesPage() {
         "Decorative stamping & staining",
         "Engineered joint spacing",
       ],
-      imageKey: "concrete-driveways",
+      imageKey: concreteDriveway,
     },
   ]
 
@@ -231,7 +236,7 @@ export default function ConcreteServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src={`/generic-placeholder-graphic.png?key=${activeService.imageKey}`}
+                src={activeService.imageKey}
                 alt={activeService.title}
                 width={600}
                 height={400}
@@ -268,13 +273,7 @@ export default function ConcreteServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {processSteps.map((step, idx) => (
               <div key={idx} className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md">
-                <div className="relative h-40">
-                  <Image
-                    src={`/generic-placeholder-graphic.png?key=${step.imageKey}`}
-                    alt={step.title}
-                    fill
-                    className="object-cover"
-                  />
+                <div className="relative h-10">
                   <div className="absolute top-3 left-3 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
                     {step.step}
                   </div>

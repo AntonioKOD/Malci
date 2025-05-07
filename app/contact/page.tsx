@@ -9,8 +9,16 @@ import { Button } from "@/components/ui/button"
 import { useInView } from "react-intersection-observer"
 import CostCalculator from "@/components/cost-calculator"
 
+interface EmailTemplateProps {
+  name: string
+  email: string
+  phone: string
+  service: string
+  message: string
+}
+
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<EmailTemplateProps>({
     name: "",
     email: "",
     phone: "",
@@ -26,6 +34,7 @@ export default function ContactPage() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
 
+    
     // Clear error when field is edited
     if (formErrors[name]) {
       setFormErrors((prev) => {
@@ -71,8 +80,29 @@ export default function ContactPage() {
     setIsSubmitting(true)
 
     try {
-      // In a real application, you would send the form data to your server or a form handling service
-      console.log("Form submitted:", formData)
+      
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+      if (!response.ok) {
+        throw new Error("Network response was not ok")
+      }
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      })
+      setFormStatus("success")
+      setFormErrors({})
+      setTimeout(() => {
+        setFormStatus(null)
+      }, 5000)
 
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500))

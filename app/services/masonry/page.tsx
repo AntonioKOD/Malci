@@ -5,6 +5,7 @@ import { CheckCircle } from 'lucide-react'
 import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import PageHeader from "@/components/page-header"
+import masonry from '@/public/masonry.jpeg'
 
 export default function MasonryPage() {
   const [activeTab, setActiveTab] = useState("walkways")
@@ -21,7 +22,7 @@ export default function MasonryPage() {
         "Integrated lighting options",
         "Complementary to existing landscaping",
       ],
-      imageKey: "walkways",
+      imageKey: masonry,
       applications: ["Front Entrances", "Garden Paths", "Side Yards", "Pool Surrounds"],
       materials: ["Natural Stone", "Concrete Pavers", "Brick", "Bluestone"],
     },
@@ -36,7 +37,7 @@ export default function MasonryPage() {
         "Custom seating walls & fire pits",
         "Precision grading & drainage",
       ],
-      imageKey: "patios",
+      imageKey: "https://images.unsplash.com/photo-1739397089006-727cc5e98565?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBhdGlvJTIwbWFzb25yeXxlbnwwfDB8MHx8fDA%3D",
       applications: ["Outdoor Living Areas", "Dining Spaces", "Fire Pit Surrounds", "Pool Decks"],
       materials: ["Flagstone", "Travertine", "Brick", "Concrete Pavers"],
     },
@@ -51,7 +52,7 @@ export default function MasonryPage() {
         "Textured or smooth finish",
         "Engineered for soil pressure",
       ],
-      imageKey: "stone-walls",
+      imageKey: "https://images.unsplash.com/photo-1694432759476-8db2bef4b334?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0b25lJTIwd2FsbHN8ZW58MHwwfDB8fHww",
       applications: ["Retaining Walls", "Garden Borders", "Property Boundaries", "Decorative Features"],
       materials: ["Fieldstone", "Granite", "Limestone", "Manufactured Stone"],
     },
@@ -66,7 +67,7 @@ export default function MasonryPage() {
         "Easy to maintain",
         "Custom patterns & colors",
       ],
-      imageKey: "belgium-block",
+      imageKey: "https://plus.unsplash.com/premium_photo-1673469103365-b0089a7a81b5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVsZ2l1bSUyMGJsb2NrfGVufDB8MHwwfHx8MA%3D%3D",
       applications: ["Driveway Borders", "Garden Edging", "Decorative Accents", "Curbing"],
       materials: ["Granite", "Basalt", "Reclaimed Cobblestone", "Engineered Block"],
     },
@@ -77,37 +78,31 @@ export default function MasonryPage() {
       name: "Natural Stone",
       description: "Quarried stone including granite, limestone, and bluestone offering unique colors and textures.",
       bestFor: "Walkways, patios, walls, steps",
-      imageKey: "natural-stone",
+      imageKey: "https://i.pinimg.com/736x/6d/d8/82/6dd8820ee8df50936a1e124dca184f69.jpg",
     },
     {
       name: "Brick",
       description: "Classic clay brick in various colors and sizes, providing traditional appeal and exceptional durability.",
       bestFor: "Walkways, patios, walls, edging",
-      imageKey: "brick",
+      imageKey: "https://i.pinimg.com/736x/1b/d1/a7/1bd1a7f977c6ba87d136a562c74023a8.jpg",
     },
     {
       name: "Concrete Pavers",
       description: "Manufactured pavers in countless shapes, colors, and textures for versatile design options.",
       bestFor: "Driveways, walkways, patios",
-      imageKey: "concrete-pavers",
+      imageKey: "https://unilock.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-23-at-9.08.16-PM.png",
     },
     {
       name: "Bluestone",
       description: "Premium natural bluestone with distinctive blue-gray coloring, ideal for elegant installations.",
       bestFor: "Patios, walkways, pool surrounds",
-      imageKey: "bluestone",
-    },
-    {
-      name: "Cobblestone",
-      description: "Traditional or reclaimed cobblestone offering historic charm and exceptional durability.",
-      bestFor: "Driveways, borders, decorative accents",
-      imageKey: "cobblestone",
+      imageKey: "https://i.pinimg.com/736x/7f/c2/b1/7fc2b16d9a4b6a5c545421d66771041c.jpg",
     },
     {
       name: "Flagstone",
       description: "Irregular shaped stone slabs creating a natural, organic appearance for outdoor spaces.",
       bestFor: "Patios, stepping stones, garden paths",
-      imageKey: "flagstone",
+      imageKey: "https://cdn.prod.website-files.com/611e33de5446a74e18a9324c/671b9c28353c25c5033924dc_671b979e83459d31d7e2ad23_stepping-stone-patterns.webp",
     },
   ]
 
@@ -219,7 +214,7 @@ export default function MasonryPage() {
             <div>
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?key=masonry-overview"
+                  src={masonry}
                   alt="Professional masonry work"
                   width={600}
                   height={400}
@@ -259,7 +254,7 @@ export default function MasonryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src={`/generic-placeholder-graphic.png?key=${activeService.imageKey}`}
+                src={activeService.imageKey}
                 alt={activeService.title}
                 width={600}
                 height={400}
@@ -328,7 +323,7 @@ export default function MasonryPage() {
               <div key={idx} className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md">
                 <div className="h-40 bg-slate-200 dark:bg-slate-700">
                   <Image
-                    src={`/generic-placeholder-graphic.png?key=${material.imageKey}`}
+                    src={material.imageKey}
                     alt={material.name}
                     width={400}
                     height={200}
@@ -359,13 +354,7 @@ export default function MasonryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {processSteps.map((step, idx) => (
               <div key={idx} className="bg-slate-50 dark:bg-slate-700 rounded-lg overflow-hidden shadow-md">
-                <div className="relative h-40">
-                  <Image
-                    src={`/generic-placeholder-graphic.png?key=${step.imageKey}`}
-                    alt={step.title}
-                    fill
-                    className="object-cover"
-                  />
+                <div className="relative h-10">
                   <div className="absolute top-3 left-3 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
                     {step.step}
                   </div>
