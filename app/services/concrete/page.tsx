@@ -10,6 +10,7 @@ import concreteWall from '@/public/concrete_wall.png'
 import concreteFoundation from '@/public/concrete_foundation.png'
 import concreteSidewalk from '@/public/concrete_sidewalk.png'
 import concreteDriveway from '@/public/concrete_driveway.png'
+import concreteWork from '@/public/concrete_work.jpeg'
 
 export default function ConcreteServicesPage() {
   const [activeTab, setActiveTab] = useState("slabs")
@@ -196,7 +197,7 @@ export default function ConcreteServicesPage() {
             <div>
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?key=concrete-overview"
+                  src={concreteWork}
                   alt="Professional concrete installation"
                   width={600}
                   height={400}
