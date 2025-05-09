@@ -8,6 +8,7 @@ import PageHeader from "@/components/page-header"
 import { useInView } from "react-intersection-observer"
 import MetaHead from "@/components/meta-head"
 
+
 export default function ServicesPage() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
@@ -125,7 +126,7 @@ export default function ServicesPage() {
       <PageHeader
         title="Our Services"
         subtitle="Comprehensive construction, excavation, concrete, and masonry solutions for residential and commercial projects."
-        backgroundImage="/placeholder.svg?key=tux07"
+        backgroundImage="https://images.unsplash.com/photo-1612935089040-89195ef54677?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2UlMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
       />
 
       {/* Introduction */}

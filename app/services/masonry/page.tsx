@@ -178,7 +178,7 @@ export default function MasonryPage() {
       <PageHeader
         title="Masonry Services"
         subtitle="Expert craftsmanship for walkways, patios, stone walls, and Belgium block."
-        backgroundImage="/placeholder.svg?key=masonry-header"
+        backgroundImage="https://images.unsplash.com/photo-1521720383465-e29fe41f81a1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1hc29ucnl8ZW58MHx8MHx8fDA%3D"
       />
 
       {/* Overview */}

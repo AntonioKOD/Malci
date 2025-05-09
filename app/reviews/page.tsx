@@ -154,7 +154,7 @@ export default function ReviewsPage() {
       <PageHeader
         title="Customer Reviews"
         subtitle="See what our satisfied customers have to say about our work."
-        backgroundImage="/placeholder.svg?key=reviews-header"
+        backgroundImage="https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmV2aWV3c3xlbnwwfHwwfHx8MA%3D%3D"
       />
 
       {/* Featured Testimonials Slider */}

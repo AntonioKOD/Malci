@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHeader
         title="About Stonecraft"
         subtitle="Learn about our company, our values, and our commitment to quality."
-        backgroundImage="/placeholder.svg?key=about-header"
+        backgroundImage="https://images.unsplash.com/photo-1603518147824-0d8ed2132213?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFzb25yeXxlbnwwfHwwfHx8MA%3D%3D"
       />
 
       {/* Company Story */}

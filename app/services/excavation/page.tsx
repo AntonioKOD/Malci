@@ -206,7 +206,7 @@ export default function ExcavationPage() {
       <PageHeader
         title="Excavation Services"
         subtitle="Professional site preparation, grading, leveling, trenching, and demolition."
-        backgroundImage="/placeholder.svg?key=excavation-header"
+        backgroundImage="https://images.unsplash.com/photo-1630288213265-64e4673b6f49?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGV4Y2F2YXRpb258ZW58MHx8MHx8fDA%3D"
       />
 
       {/* Overview */}

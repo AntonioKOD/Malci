@@ -164,7 +164,7 @@ export default function ConcreteServicesPage() {
       <PageHeader
         title="Concrete Services"
         subtitle="Expert installation of slabs, walls, foundations, sidewalks, curbs, and driveways."
-        backgroundImage="/placeholder.svg?key=concrete-header"
+        backgroundImage="https://images.unsplash.com/photo-1579724175242-0204ecac28cb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29uY3JldGV8ZW58MHx8MHx8fDA%3D"
       />
 
       {/* Overview */}

@@ -15,7 +15,7 @@ export default function TermsPage() {
             <div className="prose max-w-none">
               <h2>Introduction</h2>
               <p>
-                These Terms of Service (&quot;Terms&quot;) govern your use of the website operated by Stonecraft Paving & Masonry
+                These Terms of Service (&quot;Terms&quot;) govern your use of the website operated by Malci Construction
                 (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) and any services offered through the website. By accessing or using our website,
                 you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access the
                 website.
@@ -36,8 +36,7 @@ export default function TermsPage() {
 
               <h2>Intellectual Property</h2>
               <p>
-                The website and its original content, features, and functionality are owned by Stonecraft Paving &
-                Masonry and are protected by international copyright, trademark, patent, trade secret, and other
+                The website and its original content, features, and functionality are owned by Malci Construction and are protected by international copyright, trademark, patent, trade secret, and other
                 intellectual property or proprietary rights laws.
               </p>
               <p>
@@ -111,7 +110,7 @@ export default function TermsPage() {
 
               <h2>Limitation of Liability</h2>
               <p>
-                In no event shall Stonecraft Paving & Masonry, nor its directors, employees, partners, agents,
+                In no event shall Malci Construction, nor its directors, employees, partners, agents,
                 suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive
                 damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses,
                 resulting from:
@@ -129,7 +128,7 @@ export default function TermsPage() {
 
               <h2>Indemnification</h2>
               <p>
-                You agree to defend, indemnify, and hold harmless Stonecraft Paving & Masonry, its affiliates,
+                You agree to defend, indemnify, and hold harmless Malci Construction, its affiliates,
                 licensors, and service providers, and its and their respective officers, directors, employees,
                 contractors, agents, licensors, suppliers, successors, and assigns from and against any claims,
                 liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable
@@ -153,15 +152,11 @@ export default function TermsPage() {
               <h2>Contact Us</h2>
               <p>If you have any questions about these Terms, please contact us at:</p>
               <p>
-                Stonecraft Paving & Masonry
+                Malci Construction
                 <br />
-                123 Main Street
+                Phone: +1 (929) 536-4063
                 <br />
-                Fairfield, CT 06824
-                <br />
-                Phone: +1 (203) 888-4200
-                <br />
-                Email: info@stonecraftpaving.com
+                Email: malciconstruction@gmail.com
               </p>
             </div>
           </div>

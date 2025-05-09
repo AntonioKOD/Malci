@@ -136,7 +136,7 @@ export default function ContactPage() {
       <PageHeader
         title="Contact Us"
         subtitle="Get in touch with our team for inquiries, estimates, or to schedule a consultation."
-        backgroundImage="/placeholder.svg?key=contact-header"
+        backgroundImage="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdHxlbnwwfHwwfHx8MA%3D%3D"
       />
 
       {/* Contact Information */}
